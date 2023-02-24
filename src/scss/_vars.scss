@@ -10,6 +10,10 @@ $breakpoint480: 479.98 + px;
 
 // Colors
 $mainColor: #131418;
+$white: #fff;
+$grayText: #959595;
+$yellowBtn: #FFE500;
+$accentBlue: #077AE3;
 
 // Burger Menu
 $burgerBreakpoint: $breakpoint992;
@@ -17,5 +21,5 @@ $burgerColor: #131418;
 $burgerActiveColor: #fefefe;
 
 // Fonts
-$fontMain: sans-serif;
+$fontMain: 'Roboto', sans-serif;
 $fontSecondary: '';
