@@ -6,7 +6,7 @@
     padding: 0 $containerSidePadding + px;
 
     @media (max-width: $breakpoint1450) {
-        max-width: 1200px;
+        max-width: 1330px;
     }
 
     @media (max-width: $breakpoint992) {
@@ -24,7 +24,9 @@
 
 // Body & Locked
 body {
+    height: 100vh;
     font-family: $fontMain;
+
     &.locked {
         overflow: hidden;
     }

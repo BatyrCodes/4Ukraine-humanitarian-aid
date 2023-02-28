@@ -1,0 +1,312 @@
+// <!-- Main Page -->
+
+.secttion__hero {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(245, 239, 192, 1) 41%, rgba(191, 216, 238, 0.7315301120448179) 80%);
+
+    .hero__hero {
+        padding: 164px 0px 119px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero__item-left {
+        width: 60%;
+        height: 100%;
+    }
+
+    .item-left__title {
+        font-weight: 700;
+        font-size: 75px;
+        line-height: 75px;
+        letter-spacing: -2px;
+        color: $mainColor ;
+        text-transform: uppercase;
+
+    }
+
+    .item-left__paragraph {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: $mainColor ;
+        letter-spacing: 1px;
+        margin-top: 50px;
+    }
+
+    .item-left__donate-facebook {
+        max-width: 387px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    .all-stylesbtn {
+        padding: 18px 32px;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+
+    .item-left__linkdonate {
+        background-color: $yellowBtn;
+    }
+
+    .item-left__linkfacebook {
+        background-color: $accentBlue;
+    }
+
+    .item-left__discription {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 40px;
+        color: $grayText;
+        letter-spacing: 0.01em;
+    }
+
+    @media screen and (max-width:1200px) {
+        .hero__item-left {
+            width: 55%;
+            padding: 100px 0px 100px;
+        }
+
+        .item-left__title {
+            font-size: 60px;
+        }
+
+        .item-left__paragraph {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        .item-left__donate-facebook {
+            margin-top: 40px;
+        }
+
+        .all-stylesbtn {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width:$breakpoint992) {
+        .hero__item-left {
+            width: 60%;
+            padding: 70px 0 50px;
+        }
+
+        // .hero__hero {
+        //     flex-wrap: wrap;
+        // }
+
+        .item-left__title {
+            font-size: 45px;
+            line-height: 60px;
+        }
+
+        .item-left__paragraph {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .item-left__donate-facebook {
+            margin-top: 30px;
+            max-width: 320px;
+        }
+
+        .all-stylesbtn {
+            font-size: 16px;
+            padding: 14px 28px;
+        }
+
+        .item-left__discription {
+            font-size: 12px;
+        }
+
+    }
+
+    @media screen and (max-width:$breakpoint768) {
+        .hero__item-left {
+            width: 80%;
+            // padding: 70px 0 50px;
+        }
+
+        .item-left__title {
+            font-size: 40px;
+            // line-height: 60px;
+        }
+
+        .item-left__paragraph {
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        .item-left__donate-facebook {
+            margin-top: 30px;
+            max-width: 280px;
+        }
+
+        .all-stylesbtn {
+            font-size: 14px;
+            padding: 14px 28px;
+        }
+
+        .item-left__discription {
+            font-size: 12px;
+        }
+
+    }
+
+    @media screen and (max-width:$breakpoint480) {
+        .hero__item-left {
+            width: 100%;
+            padding: 50px 0 50px;
+        }
+
+        .item-left__title {
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        .item-left__paragraph {
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        .item-left__donate-facebook {
+            margin-top: 30px;
+            max-width: 220px;
+        }
+
+        .all-stylesbtn {
+            font-size: 12px;
+            padding: 12px 25px;
+        }
+
+        .item-left__discription {
+            font-size: 9px;
+        }
+
+    }
+}
+
+
+
+// <!-- Slides -->
+.hero__item-rigth {
+    width: 43%;
+    height: auto;
+}
+
+.carousel {
+    width: 100%;
+    position: relative;
+}
+
+.carousel>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide>img {
+    display: block;
+    width: 100%;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    margin-top: 40%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.prev {
+    left: 1.1rem;
+}
+
+.carousel-button.next {
+    right: 1.3rem;
+}
+
+@media screen and (max-width:$breakpoint992) {
+    .hero__item-rigth {
+        width: 60%;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:$breakpoint768) {
+    .carousel-button {
+        font-size: 1.5rem;
+    }
+
+    .hero__item-rigth {
+        width: 80%;
+        padding: 0;
+        // height: 550px;
+    }
+}
+
+@media screen and (max-width:$breakpoint480) {
+    .carousel-button {
+        font-size: 1rem;
+    }
+
+    .hero__item-rigth {
+        width: 100%;
+        // height: 300px;
+        padding: 0px;
+
+    }
+
+    .carousel-button.prev {
+        left: 1.1rem;
+    }
+
+    .carousel-button.next {
+        right: 1.3rem;
+    }
+
+}
