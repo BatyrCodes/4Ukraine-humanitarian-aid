@@ -11,8 +11,7 @@
     }
 
     .hero__item-left {
-        width: 60%;
-        height: 100%;
+        width: 55%;
     }
 
     .item-left__title {
@@ -75,8 +74,7 @@
 
     @media screen and (max-width:1200px) {
         .hero__item-left {
-            width: 55%;
-            padding: 100px 0px 100px;
+            width: 60%;
         }
 
         .item-left__title {
@@ -84,7 +82,7 @@
         }
 
         .item-left__paragraph {
-            font-size: 20px;
+            font-size: 18px;
             margin-top: 30px;
         }
 
@@ -98,22 +96,24 @@
     }
 
     @media screen and (max-width:$breakpoint992) {
-        .hero__item-left {
-            width: 60%;
-            padding: 70px 0 50px;
+
+        .hero__hero {
+            flex-direction: column;
+            padding: 50px 0px 50px;
         }
 
-        // .hero__hero {
-        //     flex-wrap: wrap;
-        // }
+        .hero__item-left {
+            width: 80%;
+            padding-bottom: 50px;
+        }
 
         .item-left__title {
-            font-size: 45px;
+            font-size: 55px;
             line-height: 60px;
         }
 
         .item-left__paragraph {
-            font-size: 18px;
+            font-size: 20px;
             line-height: 25px;
         }
 
@@ -136,16 +136,14 @@
     @media screen and (max-width:$breakpoint768) {
         .hero__item-left {
             width: 80%;
-            // padding: 70px 0 50px;
         }
 
         .item-left__title {
-            font-size: 40px;
-            // line-height: 60px;
+            font-size: 50px;
         }
 
         .item-left__paragraph {
-            font-size: 14px;
+            font-size: 18px;
             line-height: 25px;
         }
 
@@ -168,16 +166,15 @@
     @media screen and (max-width:$breakpoint480) {
         .hero__item-left {
             width: 100%;
-            padding: 50px 0 50px;
         }
 
         .item-left__title {
-            font-size: 30px;
+            font-size: 38px;
             line-height: 40px;
         }
 
         .item-left__paragraph {
-            font-size: 12px;
+            font-size: 15px;
             line-height: 20px;
         }
 
@@ -201,112 +198,49 @@
 
 
 // <!-- Slides -->
-.hero__item-rigth {
-    width: 43%;
-    height: auto;
+
+.image-slider {
+    width: 40%;
+    height: 100%;
 }
 
-.carousel {
+.image-slider__image img {
     width: 100%;
-    position: relative;
-}
-
-.carousel>ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.slide {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transition: 200ms opacity ease-in-out;
-    transition-delay: 200ms;
-}
-
-.slide>img {
-    display: block;
-    width: 100%;
-}
-
-.slide[data-active] {
-    opacity: 1;
-    z-index: 1;
-    transition-delay: 0ms;
-}
-
-.carousel-button {
-    position: absolute;
-    z-index: 2;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    margin-top: 40%;
-    transform: translateY(-50%);
-    color: rgba(255, 255, 255, .5);
     cursor: pointer;
-    border-radius: .25rem;
-    padding: 0 .5rem;
-    background-color: rgba(0, 0, 0, .1);
+    padding-bottom: 40px;
 }
 
-.carousel-button:hover,
-.carousel-button:focus {
-    color: white;
-    background-color: rgba(0, 0, 0, .2);
+.image-slider .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    line-height: 20px;
+    font-size: 14px;
+    border: 1px solid $yellowBtn;
+    background-color: $accentBlue;
 }
 
-.carousel-button:focus {
-    outline: 1px solid black;
-}
-
-.carousel-button.prev {
-    left: 1.1rem;
-}
-
-.carousel-button.next {
-    right: 1.3rem;
+.swiper-pagination-bullet{
+    margin-bottom: 100px;
 }
 
 @media screen and (max-width:$breakpoint992) {
-    .hero__item-rigth {
+    .image-slider {
         width: 60%;
-        margin: 0 auto;
-        padding: 0;
     }
 }
 
 @media screen and (max-width:$breakpoint768) {
-    .carousel-button {
-        font-size: 1.5rem;
-    }
-
-    .hero__item-rigth {
-        width: 80%;
-        padding: 0;
-        // height: 550px;
+    .image-slider {
+        width: 75%;
     }
 }
 
 @media screen and (max-width:$breakpoint480) {
-    .carousel-button {
-        font-size: 1rem;
+    .image-slider {
+        width: 90%;
     }
 
-    .hero__item-rigth {
-        width: 100%;
-        // height: 300px;
-        padding: 0px;
-
+    .image-slider .swiper-pagination-bullet {
+       display:none;
     }
-
-    .carousel-button.prev {
-        left: 1.1rem;
-    }
-
-    .carousel-button.next {
-        right: 1.3rem;
-    }
-
 }
