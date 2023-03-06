@@ -1,6 +1,6 @@
 // ========================= [ Header styles ] =========================
 .header {
-    background-color: #43adff;
+    background-color: $white;
 
     &.fixed {
         position: fixed;
@@ -10,17 +10,19 @@
         z-index: 2;
     }
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
-.logo {
-    a {
-        color: white;
-    }
-}
+
+// .logo {
+//     a {
+//         color: $mainColor;
+//     }
+// }
 
 // ========================== [ Menu styles ] ==========================
 .menu {
@@ -35,23 +37,30 @@
 
     // .menu__item-link
     &__item-link {
-        color: white;
+        color: $mainColor;
         display: flex;
         position: relative;
         transition: 0.5s color;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+
         &:after {
             position: absolute;
             content: '';
             left: 0;
             bottom: -3px;
-            background: #131418;
+            background: $accentBlue;
             height: 1px;
             width: 100%;
             transform: scale(0);
             transition: 0.5s transform;
         }
+
         &:hover {
-            color: #131418;
+            color: $accentBlue;
+
             &:after {
                 transform: scale(1);
             }
@@ -80,6 +89,11 @@
             align-items: center;
             z-index: 2;
             animation: fade 0.1s linear;
+            z-index: 3;
+        }
+
+        &__item-link {
+            color: $white;
         }
     }
 }
@@ -89,6 +103,7 @@
     display: none;
     background: transparent;
     z-index: 3;
+
     @media screen and (max-width: $burgerBreakpoint) {
         display: flex;
         position: relative;
@@ -101,6 +116,7 @@
                 transform: rotate(45deg);
                 transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
                 top: 8px;
+
             }
 
             &:after {

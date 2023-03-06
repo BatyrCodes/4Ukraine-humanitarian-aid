@@ -1,26 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.min.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
 
-<body class="main__body">
+  <body class="main__body">
     <!-- Header -->
     @@include('./html/_header.html')
+
     <!-- Main Page -->
-    <main></main>
+    <main>
+      <div class="secttion__hero">
+        <div class="container">
+          <div class="hero__hero">
+            <div class="hero__item-left">
+              <h1 class="item-left__title">
+                let`s Help the people of ukraine!
+              </h1>
+              <p class="item-left__paragraph">
+                In May 2022 we established an organisation called 4Ukraine
+                Humanitarian Aid. This is a non-profit organisation based in the
+                UK, focussed primarily on the collection and delivery of
+                humanitarian aid for the benefit of the children and people of
+                Ukraine.
+              </p>
+              <div class="item-left__donate-facebook">
+                <a
+                  href="https://www.justgiving.com/crowdfunding/4ukraineuk?utm_term=GRPqNRvmM"
+                  target="_blank"
+                  class="item-left__linkdonate all-stylesbtn"
+                  >Donate</a
+                >
+                <a
+                  href="https://www.facebook.com/people/4Ukraine/100083360796047/"
+                  target="_blank"
+                  class="item-left__linkfacebook all-stylesbtn"
+                  >Facebook</a
+                >
+              </div>
+              <p class="item-left__discription">
+                * Please donate to allow us to continue our humanitarian work
+              </p>
+            </div>
+            <!-- Slider main container -->
+      <div class="image-slider swiper">
+        <div class="image-slider__wrapper swiper-wrapper">
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="./img/logaflagmain.png" alt="logaflagmain">
+            </div>
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="./img/robmain.png" alt="robmain">
+            </div>
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="./img/girlmain.png" alt="girlmain">
+            </div>
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="./img/ambulasmain.png" alt="ambulasmain">
+            </div>
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="./img/boxhelpmain.png" alt="boxhelpmain">
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- Footer -->
     <!-- @@include('./html/_footer.html') -->
-</body>
-
-<script src="./js/scripts.min.js"></script>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/scripts.min.js"></script>
 
 </html>
