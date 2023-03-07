@@ -42,25 +42,35 @@
 
     .all-stylesbtn {
         padding: 18px 32px;
-        font-weight: 700;
+        font-weight: 400;
         font-size: 20px;
+        border: 1px solid $grayText;
         text-align: center;
         text-transform: uppercase;
-        color: $white;
+        color: $mainColor;
         border-radius: 20px;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
-    }
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+}
 
 
-    .item-left__linkdonate {
+    .item-left__linkdonate:hover {
         background-color: $yellowBtn;
+        color: $white;
+        border: none;
     }
 
-    .item-left__linkfacebook {
+    .item-left__linkfacebook:hover {
         background-color: $accentBlue;
+        color: $white;
+        border: none;
     }
 
     .item-left__discription {
