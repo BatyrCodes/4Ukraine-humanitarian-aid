@@ -242,24 +242,34 @@ body.locked {
 
 .secttion__hero .all-stylesbtn {
   padding: 18px 32px;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 20px;
+  border: 1px solid #959595;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
+  color: #131418;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
-.secttion__hero .item-left__linkdonate {
+.secttion__hero .item-left__linkdonate:hover {
   background-color: #FFE500;
+  color: #fff;
+  border: none;
 }
 
-.secttion__hero .item-left__linkfacebook {
+.secttion__hero .item-left__linkfacebook:hover {
   background-color: #077AE3;
+  color: #fff;
+  border: none;
 }
 
 .secttion__hero .item-left__discription {
