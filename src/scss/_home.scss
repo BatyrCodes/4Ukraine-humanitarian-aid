@@ -44,10 +44,9 @@
         padding: 18px 32px;
         font-weight: 400;
         font-size: 20px;
-        border: 1px solid $grayText;
         text-align: center;
         text-transform: uppercase;
-        color: $mainColor;
+        color: $white;
         border-radius: 20px;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
@@ -60,17 +59,19 @@
         -o-transition: all 0.5s;
 }
 
+.item-left__linkdonate{
+    background: $yellowBtn;
+}
 
+.item-left__linkfacebook{
+    background: $accentBlue;
+}
     .item-left__linkdonate:hover {
-        background-color: $yellowBtn;
-        color: $white;
-        border: none;
+        background: #d6c103;
     }
 
     .item-left__linkfacebook:hover {
-        background-color: $accentBlue;
-        color: $white;
-        border: none;
+        background: #0961b4;
     }
 
     .item-left__discription {
@@ -210,7 +211,7 @@
 // <!-- Slides -->
 
 .image-slider {
-    width: 40%;
+    width: 35%;
     height: 100%;
 }
 
