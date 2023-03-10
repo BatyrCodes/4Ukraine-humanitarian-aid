@@ -16,7 +16,9 @@
         letter-spacing: 0.01em;
         color: $mainColor;
         margin-bottom: 100px;
+        max-width: 1150px;
     }
+
     &__item{
         font-weight: 400;
         font-size: 24px;
@@ -43,12 +45,139 @@
     }
     .successes-list{
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 60px;
     }
 
     .wrapper__paddingfrom{
         margin-top: 20px;
     }
 
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 3rem;
+        margin-bottom: 100px;
+    }
+   
+    .grid-conatiners{
+        max-width: 620px;
+    }
+    .grid-conatiners img {
+        width: 100%;
+        transition: 1s ease;
+    }
+
+    .grid-conatiners:hover img {
+     transform: scale(0.95);
+     -webkit-transform: scale(0.95);
+     -moz-transform: scale(0.95);
+     -ms-transform: scale(0.95);
+     -o-transform: scale(0.95);
 }
+
+    .new-style-text {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    @media screen and (max-width:$breakpoint992) {
+        &__title{
+            font-size: 55px;
+            margin-bottom: 30px;
+        }
+        .successes-item{
+            font-size: 38px;
+        }
+        &__description{
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+        &__item{
+            font-size: 20px;
+        }
+        .successes-list{
+            gap: 60px;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (max-width:$breakpoint768) {
+        &__title{
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        .successes-item{
+            font-size: 38px;
+        }
+        &__description{
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+        &__item{
+            font-size: 18px;
+        }
+        &__bottom {
+            margin-bottom: 50px;
+        }
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            justify-content: center;
+        }
+        .grid-conatiners{
+        margin: 0 auto;
+        }
+        .successes-list{
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (max-width:$breakpoint480) {
+        &__title{
+            font-size: 38px;
+            margin-bottom: 15px;
+            line-height: 50px;
+        }
+        .successes-item{
+            font-size: 30px;
+        }
+        .wrapper__paddingfrom{
+            margin-top: 0px;
+        }
+        &__description{
+            font-size: 15px;
+            margin-bottom: 30px;
+            line-height: 30px;
+        }
+        &__item{
+            font-size: 15px;
+            line-height: 30px;
+        }
+        &__bottom {
+            margin-bottom: 50px;
+        }
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            justify-content: center;
+        }
+        .grid-conatiners{
+        margin: 0 auto;
+        }
+        .successes-list{
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+    }
+
+}
+@media screen and (max-width:$breakpoint480) {
+    .wrapper{
+        margin-top: 40px;
+    }
+}
+
+
