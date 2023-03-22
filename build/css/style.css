@@ -244,10 +244,9 @@ body.locked {
   padding: 18px 32px;
   font-weight: 400;
   font-size: 20px;
-  border: 1px solid #959595;
   text-align: center;
   text-transform: uppercase;
-  color: #131418;
+  color: #fff;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -260,16 +259,20 @@ body.locked {
   -o-transition: all 0.5s;
 }
 
+.secttion__hero .item-left__linkdonate {
+  background: #FFE500;
+}
+
+.secttion__hero .item-left__linkfacebook {
+  background: #077AE3;
+}
+
 .secttion__hero .item-left__linkdonate:hover {
-  background-color: #FFE500;
-  color: #fff;
-  border: none;
+  background: #d6c103;
 }
 
 .secttion__hero .item-left__linkfacebook:hover {
-  background-color: #077AE3;
-  color: #fff;
-  border: none;
+  background: #0961b4;
 }
 
 .secttion__hero .item-left__discription {
@@ -282,7 +285,7 @@ body.locked {
 }
 
 .image-slider {
-  width: 40%;
+  width: 35%;
   height: 100%;
 }
 
