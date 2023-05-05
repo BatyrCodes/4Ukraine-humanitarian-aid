@@ -109,7 +109,7 @@
     @media screen and (max-width:$breakpoint992) {
 
         .hero__hero {
-            flex-direction: column;
+            flex-direction: column-reverse;
             padding: 50px 0px 50px;
         }
 
